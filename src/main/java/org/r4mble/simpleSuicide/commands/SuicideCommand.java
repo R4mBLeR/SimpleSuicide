@@ -1,12 +1,12 @@
 package org.r4mble.simpleSuicide.commands;
 
-import net.kyori.adventure.text.Component;
+import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.jetbrains.annotations.NotNull;
 import org.r4mble.simpleSuicide.SimpleSuicide;
+import org.jetbrains.annotations.NotNull;
 
 import static org.r4mble.simpleSuicide.SimpleSuicide.config;
 
@@ -24,7 +24,7 @@ public class SuicideCommand implements CommandExecutor {
             player.sendMessage(config.getString("messages.local-message"));
         if (SimpleSuicide.config.getBoolean("allow-messages.global-message-allow")) {
             String msg=config.getString("messages.global-message").replace("%player%", player.getName());
-            player.getServer().sendMessage(Component.text(msg));
+            Bukkit.broadcastMessage(msg);
         }
 
         return true;
