@@ -1,7 +1,7 @@
 name: SimpleSuicide
-version: '1.0.2'
+version: '1.0.3'
 main: org.r4mble.simpleSuicide.SimpleSuicide
-api-version: '1.16.5'
+api-version: '1.13'
 authors: [ R4mBLe_ ]
 description: Suicide is easy.
 commands:
