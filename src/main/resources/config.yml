@@ -1,0 +1,7 @@
+messages:
+  no-permission: §cYou don't have permission
+  local-message: §4You committed suicide
+  global-message: §4%player% committed suicide
+allow-messages:
+  local-message-allow: true
+  global-message-allow: false

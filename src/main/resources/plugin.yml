@@ -1,0 +1,17 @@
+name: SimpleSuicide
+version: '1.0.2'
+main: org.r4mble.simpleSuicide.SimpleSuicide
+api-version: '1.21'
+authors: [ R4mBLe_ ]
+description: Suicide is easy.
+commands:
+  suicide:
+    description: Suicide command
+    aliases:
+      - suicide
+      - s
+    usage: /suicide
+permissions:
+  SimpleSuicide.suicide:
+    description: suicide permission
+    default: true
