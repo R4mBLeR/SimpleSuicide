@@ -13,7 +13,7 @@ public final class SimpleSuicide extends JavaPlugin {
         getCommand("suicide").setExecutor(new SuicideCommand());
         saveDefaultConfig();
         config = getConfig();
-        getComponentLogger().info(Component.text("Configuration is loaded."));
+        getComponentLogger().info(Component.text("Configuration is loaded"));
 
     }
 
