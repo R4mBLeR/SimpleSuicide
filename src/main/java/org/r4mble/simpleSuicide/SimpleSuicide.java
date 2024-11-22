@@ -11,7 +11,6 @@ public final class SimpleSuicide extends JavaPlugin {
     @Override
     public void onEnable() {
         getCommand("suicide").setExecutor(new SuicideCommand());
-        saveResource("config.yml", false);
         saveDefaultConfig();
         config = getConfig();
         getComponentLogger().info(Component.text("Configuration is loaded."));
